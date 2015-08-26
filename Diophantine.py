@@ -39,7 +39,7 @@ def check_if_combo_exists(num):
 
 ctr = 0
 i = packages[0] + 1
-while (ctr < packages[0] ) and (i < MAX): # We stop checking when we encounter 
+while (ctr < packages[0] ) and (i <= MAX): # We stop checking when we encounter 
                                           # packages[0] (smallest package size) 
                                           # consecutive quantities that can 
                                           # be bought
@@ -51,7 +51,7 @@ while (ctr < packages[0] ) and (i < MAX): # We stop checking when we encounter
         bestSoFar = i
     i += 1
 
-if i == MAX: 
+if (i == MAX) and (ctr <> packages[0] - 1): 
     print "Sorry, reached maximum number to try ({}).".format(MAX),
     print "Increase constant MAX if desired."
 else:
