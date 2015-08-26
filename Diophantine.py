@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Avoid buying more than what you acutally need.
+Avoid buying more than what you actually need.
 
 Given a product which comes in 3 different package sizes, this script calcu-
 lates the maximum amount (if any) which cannot be bought in exact quantity.
